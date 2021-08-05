@@ -1,2 +1,2 @@
-# redux-multilingual-select
+# react-redux-starter
 Created with CodeSandbox
