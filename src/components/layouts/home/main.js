@@ -1,12 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-// import { testMessage } from '../../../redux/actions/test';
-import {
-  IntlActions as Intl,
-  IntlProvider,
-  useTranslate
-} from 'react-redux-multilingual';
+import { useTranslate } from 'react-redux-multilingual';
+import SelectDropdown from '../../select/components/SelectDropdown';
 
 export default function Vegetables() {
   const locale = useSelector((state) => state.Intl);
@@ -20,6 +16,7 @@ export default function Vegetables() {
   return (
     <div>
       <h1>{translate('call_us')}</h1>
+      <SelectDropdown />
     </div>
   );
 }
